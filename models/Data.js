@@ -32,8 +32,7 @@ const dataSchema = new mongoose.Schema({
     },
   ],
   Contact: {
-    Email: String,
-    instagram: String,
+    type: Object
   },
 });
 
