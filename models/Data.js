@@ -34,6 +34,8 @@ const dataSchema = new mongoose.Schema({
   Contact: {
     type: Object
   },
+},{collection:'datas',
+versionKey: false //here
 });
 
 const Data = mongoose.model("Data", dataSchema);
