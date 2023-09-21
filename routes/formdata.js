@@ -11,6 +11,7 @@ router.get("/getdata", fetchuser, async (req, res) => {
       { user: req.user.id },
       { _id: 0, user: 0, __v: 0 }
     );
+
     res.json(formdata);
   } catch (error) {
     console.error(error.message);

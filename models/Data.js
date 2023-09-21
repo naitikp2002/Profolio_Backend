@@ -31,16 +31,13 @@ const dataSchema = new mongoose.Schema(
         Technologies: [String],
         Description: String,
         DemoLink: String,
+        
       },
     ],
     Contact: {
       type: Object,
     },
   },
-  // {
-  //   collection: "datas",
-  //   versionKey: false, //here
-  // }
 );
 
 const Data = mongoose.model("Data", dataSchema);
