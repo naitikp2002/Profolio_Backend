@@ -6,7 +6,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const fetchuser = require("../middleware/fetchuser");
 
-const JWT_SECRET = "This is the seceret key";
+const JWT_SECRET = process.env.JWT_SECRET_TOKEN;
 
 router.post(
   "/createuser",
